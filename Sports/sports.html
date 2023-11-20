@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Calculator</title>
+    <a href=""></a>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: black; /* Set font color to black */
+        }
+
+        .calculator {
+            background-image: url('c:/Users/ANAS/Downloads/humphrey-muleba-LOA2mTj1vhc-unsplash.jpg');
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+            text-align: center;
+            color: black; /* Set font color to black */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #4CAF50;
+            margin: 0;
+            padding: 0;
+        }
+
+        .result-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Fitness Calculator</h1>
+
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" placeholder="Enter your weight">
+        <select id="weightUnit">
+            <option value="kg">Kilograms</option>
+            <option value="lb">Pounds</option>
+        </select>
+
+        <label for="heightFeet">Height:</label>
+        <div style="display: flex; align-items: center;">
+            <input type="number" id="heightFeet" placeholder="Feet" style="flex: 1;">
+            <span style="margin: 0 5px;">'</span>
+            <input type="number" id="heightInches" placeholder="Inches" style="flex: 1;">
+        </div>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age">
+
+        <button onclick="calculate()">Calculate</button>
+
+        <div id="result" class="result-container">
+            <div id="bmiResult"></div>
+            <div id="bmrResult"></div>
+            <div id="bfpResult"></div>
+        </div>
+
+        <h2>Conversion Table: Inches to Feet</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Inches</th>
+                    <th>Feet</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function calculate() {
+            // Get input values
+            var weight = parseFloat(document.getElementById('weight').value);
+            var weightUnit = document.getElementById('weightUnit').value;
+            var heightFeet = parseFloat(document.getElementById('heightFeet').value);
+            var heightInches = parseFloat(document.getElementById('heightInches').value);
+            var age = parseInt(document.getElementById('age').value);
+
+            // Convert weight to kg if it's in pounds
+            if (weightUnit === 'lb') {
+                weight *= 0.453592; // 1 pound = 0.453592 kg
+            }
+
+            // Convert height to cm
+            var height = (heightFeet * 30.48) + (heightInches * 2.54); // 1 foot = 30.48 cm, 1 inch = 2.54 cm
+
+            // Calculate BMI
+            var bmi = weight / Math.pow(height / 100, 2);
+
+            // Calculate BMR using Harris-Benedict equation for men
+            var bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
+
+            // Calculate BFP using BMI
+            var bfp = 1.2 * bmi + 0.23 * age - 5.4;
+
+            // Display results
+            document.getElementById('bmiResult').innerHTML = `<p><strong>BMI:</strong> ${bmi.toFixed(2)}</p>`;
+            document.getElementById('bmrResult').innerHTML = `<p><strong>BMR:</strong> ${bmr.toFixed(2)} calories/day</p>`;
+            document.getElementById('bfpResult').innerHTML = `<p><strong>BFP:</strong> ${bfp.toFixed(2)}%</p>`;
+        }
+    </script>
+</body>
+</html>
