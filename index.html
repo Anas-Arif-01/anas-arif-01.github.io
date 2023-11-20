@@ -1,70 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f5f5f5; /* Background color for the page */
-            color: #333; /* Text color */
-        }
+    <title>Responsive Portfolio Website</title>
 
-        .portfolio {
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: #fff; /* Background color for the portfolio container */
-        }
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-        h1 {
-            color: #4CAF50; /* Title color */
-        }
-
-        .website-link {
-            text-decoration: none;
-            color: #007BFF; /* Link color */
-        }
-
-        .website-link:hover {
-            text-decoration: underline;
-        }
-
-        p {
-            margin: 10px 0;
-        }
-
-        footer {
-            margin-top: 20px;
-            font-size: 12px;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=
+                Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="portfolio">
-        <h1>Your Name's Portfolio</h1>
-        <p>Welcome to my portfolio! Here, you can find information about the websites I've created.</p>
 
-        <h2>My Websites:</h2>
-        <ul>
-            <li><a href="https://example1.com" class="website-link" target="_blank">Example 1</a></li>
-            <li><a href="https://example2.com" class="website-link" target="_blank">Example 2</a></li>
-            <!-- Add more websites as needed -->
+<body>
+    <!-- header design -->
+    <header clsss="sticky">
+        <img class="logo-1" src="Images/caf5a352847755041811dca6d08b0f63.jpg" alt="">
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <footer>
-            &copy; 2023 Your Name. All rights reserved.
-        </footer>
-    </div>
-</body>
-</html>
-<a href="./Sports/sports.html">Bmi calculator</a>
+        <div class="bx bx-menu" id="menu-icon">
 
+
+        </div>
+    </header>
+
+
+    <!--home design-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <div class="slide">
+                <span class="one">Hello</span>
+                <span class="two">I'm</span>
+            </div>
+            <h1>M.Anas Arif</h1>
+<h3>Software Engineering Student at Aptech Institute<span>.</span></h3>
+<p>Currently pursuing a degree in Software Engineering (HDSE) at Aptech Institute. As a dedicated student, I am developing a strong foundation in software development principles and eager to apply my knowledge in practical projects. Passionate about creating innovative solutions and continuously expanding my skills in the dynamic field of software engineering.</p>
+
+            <div class="button">
+                <a href="#" class="btn">Say Hello</a>        
+        </div>
+
+    </section>
+    <div class="underline"></div>
+
+
+
+    <!--about section design-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Images/389876534_223247113912522_7353130865241309390_n.jpg">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Creative UI Web Desiner !</h4>
+            <p>
+
+Hello! I'm Anas Arif, a dedicated Software Engineer with a knack for crafting digital experiences and a strong commitment to customer satisfaction. Proficient in HTML, CSS, JavaScript, jQuery, and Bootstrap, my journey includes valuable experiences in both technology and customer service.
+
+Having served as a Customer Helper at Supermart, I honed my interpersonal and communication skills while assisting customers and ensuring a seamless shopping experience. This unique blend of customer-centric roles, combined with my technical expertise, sets the stage for a holistic approach to problem-solving and innovation.
+
+Currently advancing my skills through a Software Engineering Diploma at Aptech Institute, my passion lies in creating user-friendly and visually appealing web applications. Projects like the Richfield Chairs Website and the Spotify Clone with Custom Design reflect my commitment to delivering high-quality digital solutions.
+
+In addition to my technical prowess, I bring a diverse skill set that includes effective collaboration, leadership, and adaptability—qualities further cultivated through active participation in group projects during my studies.
+
+I'm eager to contribute my skills to innovative projects, explore emerging technologies, and continue making a positive impact in the ever-evolving landscape of software engineering.
+
+Let's connect and explore how my multifaceted background can benefit your team and projects!
+
+            </p>
+            <a href="#" class="btn">More About</a>
+        </div>
+    </section>
+
+    <!--Service Section Design-->
+    <section class="#services" id="services">
+        <div class="main-text">
+            <p>What I am Expert In</p>
+            <h2><span>My</span>Services</h2>
+        </div>
+        <div class="services-content">
+            <div class="box">
+                <div class="s-icons">
+                    <i class="bx bx-mobile-alt"></i>
+                </div>
+                <h3>Web Design</h3>
+                <p> One way to cateforize the activities
+                    is in terms of the professional's area
+                    of expertise such as competitive analysis,
+                    corporate strategy.
+                </p>
+            </div>
+
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class="bx bx-edit-alt"></i>
+                </div>
+                <h3>Creative Design</h3>
+                <p> One way to cateforize the activities
+                    is in terms of the professional's area
+                    of expertise such as competitive analysis,
+                    corporate strategy.
+                </p>
+            </div>
+
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class="bx bx-code-alt"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p> One way to cateforize the activities
+                    is in terms of the professional's area
+                    of expertise such as competitive analysis,
+                    corporate strategy.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Portfolio section design-->
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <p>Portfolio</p>
+            <h2><span>Latest</span>Project</h2>
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="Images/Capture.PNG">
+                <div class="layer">
+                    <h5>Richfield Chairs Website</h5>
+                    <p>Developed a sleek website for Richfield Chairs, featuring an organized layout and interactive elements to showcase their products.
+                    </p>
+                    <a href="Projects/Richfield Final/Home.html"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="Images/Capture.PNG">
+                <div class="layer">
+                    <h5>BMI Caluclator</h5>
+                    <p></p>
+                    <a href="./Sports/sports.html"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="Images/Spo ss.PNG">
+                <div class="layer">
+                    <h5>Spotify Clone</h5>
+                    <p>Crafted a personalized Spotify clone with a unique design, combining aesthetics with functionality for an engaging user experience.</p>
+                    <a href="Projects/Spotify 1 (1)/Home.html"><i class='bx bx-link-external'></i></a>
+
+
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--contact section design-->
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact<span>Me!</span></h2>
+            <h4>If You Have Any Project In Your Mind</h4>
+            <p>I'm a UI/Web/Graphic Designer - Creating Bold & Brave Interface Design For Companies All Across The World
+            </p>
+            <div class="list">
+                <li><a href="tel:+923056506678">+92-3056506678</a></li>
+                <li><a href="mailto:anaxeffi@gmail.com">anaxeffi@gmail.com</a></li>
+            </div>
+            <div class="contact-icons">
+                <a href="https://www.facebook.com/anaxeffi"><i class='bx bxl-facebook'></i></a>
+
+            </div>
+        </div>
+        <!--contact form design-->
+        <div class="contact-form">
+            <form method="post">
+                <input type="name" name="name" placeholder="your name" required>
+                <input type="email" name="email" placeholder="your email address" required>
+                <input type="" name="phone" placeholder="your mobile number" required>
+                <input type="text" height=20 name="text" id="" cols="35" rows="10" placeholder="How can I help you" required></input>
+                <input type="submit" name="submit" value="send message" class="submit" required>
+               
+               
+               
+               
+
+
+            </form>
+        </div>
+    </section>
+    <!--end section design-->
+    <section class="end">
+        <div class="last-text">
+            <p> Copyright © 2023 by Anas Arif All Rights Reserved.</p>
+
+        </div>
+        <div class="top">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </section>
