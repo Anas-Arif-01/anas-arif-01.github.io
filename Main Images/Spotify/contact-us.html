@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Contact Us</title>
+    <link rel="stylesheet" href="CDNS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="CSS/contact-us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="spo-img">
+            <img src="Images/spotify 2.PNG" alt="" width="230px" height="60px">
+        </div>
+        <div style="display: flex;">
+            <h5></h5>
+            <div class="login">
+                <h6>
+                    <a href="signup.html" class="button">Sign Up</a>&nbsp;&nbsp;&nbsp;
+                    <a href="login.html" class="button">&nbsp;Login&nbsp;&nbsp;</a>
+                </h6>
+            </div>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <div class="top-navigation">
+            <a href="Home.html"><img src="Images/home.PNG" alt=""> Home</a>
+            <a href="about us.html"><img src="Images/search.PNG" alt="">About us</a>
+            <a href="contact-us.html"><img src="Images/library.PNG" alt="">Contact Us</a>
+            <a href="contact-us.html"><img src="Images/contact-icon.png" alt=""> Contact Us</a>
+        </div>
+    </div>
+
+    <section class="contact-us">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or concerns, feel free to reach out to us. We are here to help!</p>
+
+            <form action="process_contact_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Spotify AB</p>
+    </footer>
+
+    <script src="CDNS/bootstrap.bundle.min.js"></script>
+    <script src="CDNS/bootstrap.min.js"></script>
+    <script src="CDNS/popper.min.js"></script>
+</body>
+</html>
