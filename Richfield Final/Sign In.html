@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="cdns/bootstrap.css">
+    <!-- css -->
+    <link rel="stylesheet" href="Css/Sign In.css">
+    <!-- Icon -->
+    <link rel="icon" href="Logo/Logo-01.png">
+    <!-- Title -->
+    <title>Richfield Chairs</title>
+    <!-- fontawesome -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+      <!-- navbar -->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container">
+                        <a class="navbar-brand" href="Home.html"><img src="Logo/Nav bar logo-01.png" id="nav-logo" alt="Logo" height="60px"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                  <div class="collapse navbar-collapse nav-style" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="About Us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Contact Us.html">Contact Us</a>
+                        </li>
+                        </ul>
+                  </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+    </header>
+
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 p-0">
+            <img src="Images/Sign In.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-6 form">
+            <form action="">
+              <h1 class="mb-5 mt-4 titles">Sign In</h1>
+
+              <label for="">Email / Phone Number</label> <br>
+              <input type="text" id="username" name="email" placeholder="Your email or phone number.."> <br>
+
+              <label for="">Password</label> <br>
+              <input type="password" id="password" name="subject" placeholder="Your password..">
+
+              <div class="checkbox"><input type="checkbox" id="checkbox" onclick="myFunction()"> <small>Show Password</small></div> <br> 
+
+              <input type="submit" value="SIGN IN"> <br> <br>
+
+              <h6>OR</h6> <br> 
+
+              <h6>Continue With...</h6>
+              <a href="#" id="sign-in-externel"><i class="fa-brands fa-google fa-lg"></i></a>
+              <a href="#" id="sign-in-externel"><i class="fa-brands fa-facebook-f fa-lg"></i></a> <br> <br>
+              
+              <!-- <div class="btn-custom"><a href="#">Continue With Google</a></div> <br> <br>
+              <div class="btn-custom"><a href="#">Continue With Facebook</a></div> <br> <br> -->
+
+              <p>Not a member? <a href="Sign Up.html">Sign up</a></p>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- footer content -->
+      <div class="container-fluid footer">
+        <div class="row">
+          <div class="col-12 text-center pb-3">
+           <img src="Logo/Footer Logo-01-01.png" style="width: 400px;" alt="">
+          </div>
+          <div class="col-12 text-center" style="color: white;">
+            <p> <i class="fa-sharp fa-solid fa-location-dot" style="color: #ffffff;"></i> <a href="https://goo.gl/maps/gRVfnS1N1qxueU7i6" target="_blank">Aptech Metro Star Gate, Shahfaisal Colony, Karachi</a></p>                
+            <p>
+              <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+              <a href="">555 555 555</a> &nbsp; &nbsp; &nbsp;
+              <i class="fa-solid fa-fax" style="color: #ffffff;"></i>
+              <a href="">555 555 555</a>
+            </p>                              
+            <p> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i> <a href="mailto:richfieldchairs@company.com">richfieldchairs@company.com</a></p>
+            <p class="icons">
+              <a href="https://www.facebook.com/AptechMetro" target="_blank"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a>
+              <a href="https://www.instagram.com/aptech_metro/?hl=en" target="_blank"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
+              <a href="https://twitter.com/aptech_metro?lang=en" target="_blank"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a>
+              <a href="https://pk.linkedin.com/company/aptechmetro" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- footer content end -->
+      <!-- copyright -->
+      <div class="container-fluid sub-footer">
+        <div class="row">
+          <div class="col text-center" style="color: white;">© 2018-2020 Richfield Chairs All Rights Resrved | By Fida, Aiman & Anas</div>
+        </div>
+      </div>
+      <!-- copyright end -->
+    </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("password");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+}
+    </script>
+
+    <!-- javascript cdn -->
+    <script src="https://kit.fontawesome.com/598abd7a8b.js" crossorigin="anonymous"></script>
+    <script src="cdns/bootstrap.bundle.js"></script>
+    <!-- javascript cdn end -->
+</body>
+</html>
