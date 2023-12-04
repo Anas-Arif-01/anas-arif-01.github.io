@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Player</title>
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="CSS/focus-flow.css">
+    <link rel="stylesheet" href="CDNS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Playlist.css">
+</head>
+
+<body>
+    <header>
+        <div class="spo-img">
+            <img src="Images/spotify 2.PNG" alt="" width="230px" height="60px">
+        </div>
+        <div style="display: flex;">
+            <h5></h5>
+            <div class="login">
+                <!-- Add login and signup buttons or user profile information as needed -->
+                <h6><a href="signup.html" class="button">Sign Up</a>&nbsp;&nbsp;&nbsp;
+                    <a href="login.html" class="button">&nbsp;Login&nbsp;&nbsp;</a></h6>
+            </div>
+        </div>
+
+        <!-- Home page navigation bar -->
+        <div class="navbar">
+            <div class="top-navigation">
+                <a href="Home.html"><img src="Images/home.PNG" alt=""> Home</a>
+                <a href="about us.html"><img src="Images/search.PNG" alt="">About Us</a>
+                <a href="your-library"><img src="Images/library.PNG" alt="">Contact Us</a>
+                <!-- Add other navbar links as needed -->
+            </div>
+        </div>
+    </header>
+
+    <div class="playlist-container">
+        <h2>My Playlist</h2>
+        <ul id="playlist">
+            <!-- Playlist items will be added dynamically using JavaScript -->
+        </ul>
+    </div>
+
+    <div class="player-container">
+        <audio id="audioPlayer" controls>
+            <!-- Audio player controls -->
+        </audio>
+        <h3 id="currentSong">Now Playing: </h3>
+    </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const playlist = document.getElementById('playlist');
+    const audioPlayer = document.getElementById('audioPlayer');
+    const currentSong = document.getElementById('currentSong');
+
+    // Define your playlist here
+    const songs = [
+        { title: 'Song 1', url: 'song1.mp3' },
+        { title: 'Song 2', url: 'song2.mp3' },
+        // Add more songs as needed
+    ];
+
+    // Dynamically create playlist items
+    songs.forEach((song, index) => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${index + 1}. ${song.title}`;
+
+        // Add click event to play the selected song
+        listItem.addEventListener('click', function () {
+            playSong(index);
+        });
+
+        playlist.appendChild(listItem);
+    });
+
+    function playSong(index) {
+        const selectedSong = songs[index];
+
+        // Set the audio source and play the song
+        audioPlayer.src = selectedSong.url;
+        audioPlayer.play();
+
+        // Update the currently playing song text
+        currentSong.textContent = `Now Playing: ${selectedSong.title}`;
+    }
+});
+
+</script>
+    <script src="CDNS/bootstrap.bundle.min.js"></script>
+    <script src="CDNS/bootstrap.min.js"></script>
+    <script src="CDNS/popper.min.js"></script>
+    <script src="JS/PlaylistPlayer.js"></script>
+</body>
+
+</html>

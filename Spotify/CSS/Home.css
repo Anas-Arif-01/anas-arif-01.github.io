@@ -1,0 +1,388 @@
+header {
+background-color: rgb(0,0,0,1);
+display: flex;
+justify-content: space-between;
+align-items: center; 
+background-color: #535353;
+}
+.card-img-top:hover{
+    align-items: end;
+}
+.showmore{
+    text-align: end;
+    margin-left: 700px;
+    text-decoration: none;
+    font-size: large;
+    color: antiquewhite;
+}
+.showmore a{
+    text-decoration: none;
+    color: #ddd;
+}
+.spotify-card {
+    position: relative;
+    border: none;
+    transition: transform 0.2s;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.spotify-card:hover {
+    transform: scale(1.05);
+    border: #535353 6px solid3;
+}
+.spotify-card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    opacity: -1;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.spotify-card:hover .overlay {
+    opacity: 5;
+}
+
+.overlay-icon {
+    font-size: 36px;
+    color: #1DB954;
+    text-align: end;
+    size: 200px;
+    margin-left:130px ;
+}
+.card:hover {
+    background-color: #333; /* Change this to the desired background color */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.card-body {
+    position: relative;
+    z-index: 1;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.card-title {
+    color: #fff;
+}
+
+.card-text {
+    color: #ddd;
+}
+
+.btn-play {
+    width: 100%;
+}
+.button{
+    color: white;
+    text-decoration: none;
+}
+.button:hover{
+    border: 10px white solid; 
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.spo-img{
+    background-color: black;
+    padding-left: 20px; 
+}
+header img{
+ position: relative;
+ padding: 0%;
+}
+button{
+    border: 5px white solid;
+    border-radius: 100%;
+    color: black;
+    background-color: aliceblue;
+    text-transform: inherit;
+    background: white;
+}
+button:hover{
+    color: aqua;
+}
+body {
+    background-color: #222;
+}
+.navbar {
+    margin: 0px;
+    background-color: black;
+    height: 1400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-left: 0px;
+}
+.navbar a:hover{
+color: white;
+}
+.top-navigation {
+    display: flex;
+    flex-direction: column;
+}
+.top-navigation a {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 0px;
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+}
+.card {
+    margin: 10px;
+    width: 154px;
+    height:380px; 
+    background-color: #535353;
+    border:2px solid transparent;
+    border-radius: 5px;
+    height: 350px;
+    margin-right: 15px;
+
+}
+/* .card img{
+    border:2px solid transparent;
+    border-radius: 5px;
+    width: 150.47PX;
+    height: 232px;
+} */
+.card {
+
+    margin: 10px;
+    padding: 10px;
+    width: 230px; /* Set the width */
+    background-color: #252525;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    height: 350px; /* Set the height */
+}
+.showmore{
+    text-align: end;
+    font-size:small;
+}
+.card:hover{
+    background-color: #535353;
+    opacity: +10;
+}
+.card img {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    width: 190px; /* Set the width */
+    height: 180px; /* Set the height */
+    /* object-fit: cover; */
+     margin-left: 9px;
+     margin-top: 15px;
+}
+.anasbhai{
+    background-color: aqua;
+}
+.box_main{
+    margin-left: 270px;
+    margin-top: 30px;
+    background-color: aliceblue;
+    width: 230px;
+    height: 250px;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    padding-left: 200px;
+}
+  .card-text{
+    color: white;
+    text-decoration: none;
+}
+  h5{
+    color: white;
+    
+  }
+  /* Playlist.css */
+
+/* Header and user section styles */
+header {
+    background-color: rgb(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #535353;
+  }
+  
+  .user-section {
+    display: flex;
+  }
+  
+  .user-section h6 {
+    margin-left: 10px;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px;
+  }
+  
+  .top-navigation a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Other styles for playlist and player sections as needed */
+  
+  .play{
+    border: 2px solid black;
+    border-radius: 50px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: black; 
+}
+.play a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+.play:hover{
+    border: 2px solid white;
+    border-radius: 50px;
+    padding-bottom: 5px;
+    text-align: center;
+    color:black;
+    background-color: white;
+}
+
+.play img{
+    color: green;
+    width: 25px;
+}
+.Focus{
+    color: aliceblue;
+    padding-left:290px;
+    padding-top: 20px; 
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    padding-left: 350px;
+    padding-top: 100px;
+    color: antiquewhite;
+    justify-content: space-between;  
+}
+
+.about1{
+    display: flex;
+    flex-direction: column; 
+}
+.about2{
+    display: flex;
+    flex-direction: column;
+}
+.about3{
+    display: flex;
+    flex-direction: column;
+}
+.about4{
+    display: flex;
+    flex-direction: column;
+}
+.nav-about{
+padding-top: 500px;
+font-size: small;
+}
+h6{
+    color: white;
+}
+.nav-space{
+    padding: 60px;
+}
+.see-all{
+    padding-left:1100px;
+    color: antiquewhite;
+}
+.see-all:hover{
+    color: aqua;
+}
+footer{
+    text-align: end;
+}
+hr{
+    color: white;
+    height: 1px;
+    margin-left: 290px;
+    margin-top: 0%;
+    margin-right: 50px;
+}
+.copyright{
+    margin-left: 300px;
+}
+@media only screen and (max-width: 300px){
+    header {
+        background-color: rgb(0,0,0,1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        background-color: #535353;
+        width: 190vw;
+        }
+    .button{
+     color: black;
+    text-decoration: none;
+    margin-left: 250px;
+    border:1px white solid;
+    background-color: aliceblue;
+    margin-top: 50;
+}
+.button:hover{
+    border: 10px white solid; 
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: end;
+}
+.card {
+    margin: 10px;
+    width: 200px;
+    height:380px; 
+    background-color: #535353;
+    margin-left: 280px;   
+}
+.navbar {
+    margin: 0px;
+    background-color: black;
+    height: 1400px;
+    width: 200px;
+    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-left: 0px;
+}
+.spo-img{
+    background-color: black;
+    padding-left: 20px;
+    width:230px;
+}
+.login{
+    padding-left: 20px;
+}
+}
