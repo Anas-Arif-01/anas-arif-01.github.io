@@ -74,21 +74,21 @@
               
               
               <label for="">Email Address</label> 
-              <input type="text" id="username" name="email" placeholder="Enter Your Email Address..">
+              <input type="text" id="signusername" name="email" placeholder="Enter Your Email Address..">
               
               
               <label for="">Phone Number</label> 
-              <input type="text" id="username" name="number" placeholder="Enter Your Phone Number..">
+              <input type="text" id="" name="number" placeholder="Enter Your Phone Number..">
               
               
 
               <label for="">Password</label> 
-              <input type="password" id="password" name="subject" placeholder="Enter Your password..">
+              <input type="password" id="signpass" name="subject" placeholder="Enter Your password..">
 
               <label for="">Confirm Password</label> 
               <input type="password" id="password" name="subject" placeholder="Re-enter Your password..">
 
-              <input type="submit" value="SIGN UP">
+              <input type="button" onclick="savingdata()" value="SIGN UP">
 
               <p>Already a member? <a href="Sign In.html">Sign in</a></p>
               
@@ -132,6 +132,23 @@
       </div>
       <!-- copyright end -->
     </footer>
+
+    <script>
+      function savingdata(){
+      email = document.getElementById("signusername").value
+      pass = document.getElementById("signpass").value
+      // localStorage.setItem("signusername",signusername); 
+      // localStorage.setItem("signpass",signpass); 
+      let users=JSON.parse(localStorage.getItem("users"))||[]
+      let newuser={
+        email:email,
+        pass:pass
+      }
+
+      alert("data saved")
+      }
+    </script>
+
 
     <!-- javascript cdn -->
     <script src="https://kit.fontawesome.com/598abd7a8b.js" crossorigin="anonymous"></script>
