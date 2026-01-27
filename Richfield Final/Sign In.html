@@ -17,6 +17,7 @@
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="Sign In.html">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -69,7 +70,7 @@
 
               <div class="checkbox"><input type="checkbox" id="checkbox" onclick="myFunction()"> <small>Show Password</small></div> <br> 
 
-              <input type="submit" value="SIGN IN"> <br> <br>
+              <input  type="button" onclick="ck()" value="SIGN IN"> <br> <br>
 
               <h6>OR</h6> <br> 
 
@@ -124,6 +125,21 @@
     </footer>
 
     <script>
+
+
+      function ck(){
+      var signusername=localStorage.getItem("email")
+      var signpass=localStorage.getItem("pass")
+     var pass = document.getElementById("password").value;
+     var email = document.getElementById("username").value;
+     if(email===email && pass===pass){
+      alert("you have logged in");window.location.href="home.html"
+    }
+    else{
+      alert("wrong credencials");
+      
+     }
+    }
         function myFunction() {
           var x = document.getElementById("password");
             if (x.type === "password") {
